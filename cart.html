@@ -1,0 +1,122 @@
+<!-- Dibuat oleh Shandy -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100">
+
+    
+        <nav>
+            <div class="left">
+                <div class="logo">
+                    <img src="/Assets/Icon/ShanshopLogo.png">
+                </div>
+                <div class="links">
+                    <a href="index.html">Beranda</a>
+                    
+                
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">
+                Produk
+                <i class='bx bx-chevron-down' >
+            </i>
+        </button>
+            <div class="dropdown-content" style="z-index: 1;
+            background-color: white;">
+                <a href="#">Kategori 1</a>
+                <a href="#">Kategori 2</a>
+                <a href="#">Kategori 3</a>
+            </div>
+                </div>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Search...">
+                <button><i class='bx bx-search'></i></button>
+            </div>
+    
+            <div class="buttons">
+                <a href="#"><i class='bx bx-support'></i></a>
+                <a href="cart.html"><i class='bx bxs-cart'></i></a>
+                <a href="profile.html"><i class='bx bx-user'></i></a>
+            </div>
+    
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto p-4">
+        <div class="flex space-x-4">
+            <!-- Sidebar -->
+            <aside class="w-1/4 bg-white p-4 shadow rounded">
+                <h2 class="font-bold mb-4">Kategori</h2>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:underline">Semua</a></li>
+                    <li><a href="#" class="hover:underline">Laptop</a></li>
+                    <li><a href="#" class="hover:underline">Smartphone</a></li>
+                    <li><a href="#" class="hover:underline">Robot</a></li>
+                </ul>
+                <div class="mt-8">
+                    <h2 class="font-bold mb-4">Keranjang Belanja</h2>
+                    <ul class="space-y-2">
+                        <li>Laptop 2 (1 x 6.250.000)=6.250.000</li>
+                        <li>Smartphone 2 (1 x 4.300.000)=4.300.000</li>
+                        <li>Robot 1 (2 x 3.500.000)=7.000.000</li>
+                    </ul>
+                </div>
+            </aside>
+
+            <!-- Product List -->
+            <section class="w-3/4">
+                <h2 class="font-bold text-2xl mb-4">Daftar Produk</h2>
+                <div class="grid grid-cols-3 gap-4">
+                    <!-- Product Card 1 -->
+                    <div class="bg-white p-4 shadow rounded">
+                        <img src="Assets/Product Images/3.jpg" alt="Robot 1" class="w-full h-48 object-cover mb-4">
+                        <h3 class="font-bold text-xl mb-2">Robot 1</h3>
+                        <p class="text-gray-700 mb-2">Rp. 3.500.000</p>
+                        <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <div class="flex justify-between">
+                            <button class="bg-blue-500 text-white px-4 py-2 rounded">Detail</button>
+                            <button class="bg-green-500 text-white px-4 py-2 rounded">Beli</button>
+                        </div>
+                    </div>
+                    <!-- Product Card 2 -->
+                    <div class="bg-white p-4 shadow rounded">
+                        <img src="Assets/Product Images/4.jpg" alt="Robot 2" class="w-full h-48 object-cover mb-4">
+                        <h3 class="font-bold text-xl mb-2">Robot 2</h3>
+                        <p class="text-gray-700 mb-2">Rp. 4.500.000</p>
+                        <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <div class="flex justify-between">
+                            <button class="bg-blue-500 text-white px-4 py-2 rounded">Detail</button>
+                            <button class="bg-green-500 text-white px-4 py-2 rounded">Beli</button>
+                        </div>
+                    </div>
+                    <!-- Product Card 3 -->
+                    <div class="bg-white p-4 shadow rounded">
+                        <img src="Assets/Product Images/5.jpg" alt="Robot 3" class="w-full h-48 object-cover mb-4">
+                        <h3 class="font-bold text-xl mb-2">Robot 3</h3>
+                        <p class="text-gray-700 mb-2">Rp. 6.100.000</p>
+                        <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <div class="flex justify-between">
+                            <button class="bg-blue-500 text-white px-4 py-2 rounded">Detail</button>
+                            <button class="bg-green-500 text-white px-4 py-2 rounded">Beli</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+</body>
+
+</html>
